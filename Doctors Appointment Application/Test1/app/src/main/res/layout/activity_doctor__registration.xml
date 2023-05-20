@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor_Registration">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/doctor_application_bar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <TextView
+            android:id="@+id/title_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFF"
+            android:layout_marginTop="1dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="30dp"
+            android:text="Doctor Registration" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctor_application_bar"
+        android:id="@+id/doctor_detail_scrollview"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:textColor="#000"
+                android:textSize="14dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint=""
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="#000"
+                android:id="@+id/DoctorName_text"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName : "
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint="Email / Unique Username"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/DoctorUserName_text"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doctor Type(Specialization) : "
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/DoctorType_text"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Number : "
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/Employee_Number_text"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hospital/Clinic : "
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/Hospital_address_text"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email : "
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/doctor_email_text"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number : "
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/Doctor_phoneNumber_text"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City : "
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/Doctor_City_text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password : "
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/Doctor_Password"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/doctor_register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:paddingHorizontal="24dp"
+                android:background="@color/colorPrimaryDark"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:text="Register"
+                android:textColor="#f0f0f0" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

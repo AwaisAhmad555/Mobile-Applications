@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor_login_panel">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/doc_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TextView
+            android:id="@+id/doc_title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFF"
+            android:layout_marginTop="-55dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="30dp"
+            android:text="Doctor Login" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="131dp"
+                android:layout_height="126dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/doctor" />
+
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:textColor="#000"
+                android:text="UserName : " />
+
+    <EditText
+        android:id="@+id/doctor_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint=""
+        android:textColor="#000"
+        android:text="" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Password : " />
+
+            <EditText
+                android:id="@+id/doc_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_gravity="left|center"
+                android:textColor="#000"
+                android:hint=""
+                android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/doc_Login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#f0f0f0"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Login" />
+
+
+    <TextView
+        android:id="@+id/Info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="0dp"
+        android:text="New Registration !"
+        android:layout_marginTop="30dp"/>
+
+
+
+            <ImageButton
+                android:id="@+id/doc_registration_Button"
+                android:layout_width="120dp"
+                android:layout_height="33dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:src="@drawable/ic_person_add_white_24dp"
+                android:background="@color/design_default_color_primary_dark"
+                >
+            </ImageButton>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

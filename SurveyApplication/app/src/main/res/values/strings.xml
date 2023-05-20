@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Dengue Surveillance</string>
+    <string name="map_key" translatable="false">AIzaSyAxjmaXLXuQi1ROOYPUdiIUaaYbXn8-pyA</string>
+
+
+    <string-array name="spinner_values">
+
+        <item>Buildings</item>
+        <item>Plane Land</item>
+        <item>Marshes</item>
+        <item>Garbage or Trash Covered Area</item>
+        <item>Coastal Area</item>
+        <item>Green Space</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item-doctor"
+          android:title="Doctors"
+          android:icon="@drawable/doc3"
+          android:clickable="true"/>
+
+    <item android:id="@+id/item-appointment" android:title="Appointment" android:icon="@drawable/appointment" android:clickable="true"/>
+    <item android:id="@+id/item-temperature" android:title="Body Temperature" android:icon="@drawable/head" android:clickable="true"/>
+    <item android:id="@+id/item-roomTemp" android:title="Room Temperature" android:icon="@drawable/room" android:clickable="true"/>
+    <item android:id="@+id/item-pulse" android:title="Pulse" android:icon="@drawable/pulse1" android:clickable="true"/>
+    <item android:id="@+id/item-humidity" android:title="Humidity" android:icon="@drawable/dew" android:clickable="true"/>
+    <item android:id="@+id/item-airQuality" android:title="Air Quality" android:icon="@drawable/aq" android:clickable="true"/>
+    <item android:id="@+id/item-position" android:title="Position" android:icon="@drawable/lay_down" android:clickable="true"/>
+
+</menu>

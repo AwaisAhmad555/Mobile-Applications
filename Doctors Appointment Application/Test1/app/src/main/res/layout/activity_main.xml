@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TextView
+            android:id="@+id/title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFF"
+            android:layout_marginTop="-55dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="30dp"
+            android:text="User Login" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint=""
+        android:textColor="#000"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="27dp"
+        android:layout_marginBottom="120dp"
+        android:textColor="#000"
+        android:text="UserName : " />
+
+    <Button
+        android:id="@+id/Login_btn"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="380dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#f0f0f0"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#000"
+        android:text="Password : " />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="left|center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="200dp"
+        android:textColor="#000"
+        android:hint=""
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="131dp"
+        android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="0dp"
+        android:text="No of Attempts left" />
+
+    <TextView
+        android:id="@+id/registration_link"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:layout_marginTop="530dp"
+        android:textColor="@android:color/black"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:text="New Registration!" />
+
+
+</android.support.design.widget.CoordinatorLayout>

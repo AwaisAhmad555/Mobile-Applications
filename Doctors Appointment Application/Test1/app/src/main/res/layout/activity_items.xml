@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="168dp"
+    android:id="@+id/card_item"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    tools:context=".Items"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="10dp">
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/img_logo"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/itm_name"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Item"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

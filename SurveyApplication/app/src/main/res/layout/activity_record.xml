@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_alignParentTop="true"
+        android:id="@+id/record_bar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient_background"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/title_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFF"
+                android:layout_marginTop="1dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="25dp"
+                android:text="Recording Sample" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/progress_bar"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_mic_black_24dp" />
+
+
+    <ProgressBar
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/progress_bar"
+        android:layout_below="@id/record_bar"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circular_bar"
+
+        />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:id="@+id/chronometer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="157dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="17sp"
+        android:text="Tap button to start recording!"
+        android:layout_above="@+id/record_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/record_txt"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_mic"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/record_btn"
+        android:background="@drawable/round_background"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:background="@color/color2"
+        android:id="@+id/btn_stop"
+        android:text="STOP"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:shadowColor="#000"
+        android:layout_marginLeft="2dp"
+        android:drawableLeft="@drawable/ic_stop_black_24dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/next_round_btn1"
+        android:text="NEXT"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed"
+        android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+        android:background="@drawable/round_background"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_registration">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TextView
+            android:id="@+id/title_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFF"
+            android:layout_marginTop="-55dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="30dp"
+            android:text="User Registration" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="24dp"
+        android:text="Name : "
+        android:textSize="14dp"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="107dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="24dp"
+        android:text="UserName : "
+        android:textSize="14dp"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <EditText
+        android:id="@+id/username_text"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="217dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:layout_marginTop="284dp"
+        android:layout_marginLeft="24dp"
+        android:text="Age : "
+        android:textSize="14dp"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <EditText
+        android:id="@+id/age_edit"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="322dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="number"
+        android:text=""
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:layout_marginTop="395dp"
+        android:layout_marginLeft="24dp"
+        android:text="Password : "
+        android:textSize="14dp"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity=""
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="432dp"
+        android:textColor="#000"
+        android:hint=""
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Submit_btn"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#f0f0f0"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Submit" />
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

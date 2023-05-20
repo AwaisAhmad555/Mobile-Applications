@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.surveyapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mosquito"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mosquito"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".dashboard"></activity>
+        <activity android:name=".survey_information" />
+        <activity android:name=".registration" />
+        <activity android:name=".Login" />
+        <activity android:name=".selection_screen" />
+        <activity android:name=".splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".information_upload" />
+        <activity android:name=".RecordActivity" />
+        <activity android:name=".Environment" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".location" />
+        <activity android:name=".UserAge" />
+        <activity android:name=".QuistionOne" />
+        <activity android:name=".HomeScreen" />
+        <activity android:name=".StartActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:layout_marginTop="15dp"
+    tools:context=".switch_items">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/row1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:text="Fan #"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/appliances_text1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:text="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/appliances_index"
+                />
+
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/Switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
